@@ -1,4 +1,4 @@
-Created for Field Programmable Gate Array Design (FPGA) Design class's final project.
+## Created for Field Programmable Gate Array Design (FPGA) Design class's final project.
 
 The premise of the project was to create a robot that could move in four directions (up, right, left, down) to reach a target coordinate (xt, yt) from a starting point (x0, y0).
 Obstacles are hard-coded in the file mazeFSM.vhd and can be updated to add more or less or change where they are in the maze.
