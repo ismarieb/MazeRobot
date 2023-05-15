@@ -4,6 +4,7 @@ The premise of the project was to create a robot that could move in four directi
 Obstacles are hard-coded in the file mazeFSM.vhd and can be updated to add more or less or change where they are in the maze.
 Finally, the path taken by the robot will be displayed if robot successfully reaches the target, or displays "IMPOSSIBLE" if a path is not found.
 Note that for certain cases, backtracking was not created successfully for the project.
+Note also some files were given, so the only files created by Ismarie Birriel were mazeFSM.vhd, maze_constraints.xdc, and mazeFSM_tb.vhd. Files updated from given included oled_test.vhd, which was the top module file.
 
 ### Instructions to operate board:
 
@@ -26,9 +27,10 @@ For example, lines 38 and 39 should be uncommented if the 8x8 maze needs to be u
 
 Lastly, for the obstacles, they are placed in the state s1, so for each maze there are two obstacles for each that can be commented/uncommented depending on the number of obstacles you want.
 For example, if you just want one obstacle for the 8x8 maze, you then uncomment line 85 to place one obstacle.
+The file maze_constraints.xdc contains all constraints needed for the Zedboard.
 
 ### Instructions to generate simulation:
-Following the changes made to mazeFSM.vhd to build the maze you want to simulate, next is uncommenting/commenting
+Following the changes made to mazeFSM.vhd to build the maze you want to simulate, next is uncommenting/commenting lines on mazeFSM_tb.vhd.
 the lines for the signal sw_input that gets passed into the switch_input input for the maze_FSM entity.
 
 Each maze type has the same starting point, while the end point is different depending on the size. The signal sw_input can be changed
